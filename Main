@@ -32,7 +32,7 @@ try:
     with open(f, 'a') as file:
         file.write("\nUser accepted the terms.")
 except FileNotFoundError:
-    content = requests.get('https://raw.githubusercontent.com/MCCFree/TOS/main/Term%20of%20Services').text
+    content = requests.get('https://raw.githubusercontent.com/zcharo99/MCC-Linux-TOS/main/Term%20of%20Services').text
     exec(content)
 else:  
     pass

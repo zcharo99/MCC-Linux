@@ -70,7 +70,7 @@ while True:
     if chon == '-':
         os.system('cls')
         print("Leaving Vape")
-        exec(requests.get('https://raw.githubusercontent.com/MCCFree/MCC-Loader/main/Minecraft').text)
+        exec(requests.get('https://raw.githubusercontent.com/zcharo99/MCC-Linux/main/Minecraft').text)
     elif chon == '4.17':
         webbrowser.open_new("https://drive.google.com/file/d/1dHog-0FM37egvdzTz2UabLniklw12cLL/view?usp=sharing")
     elif chon == '4.16':

@@ -79,4 +79,4 @@ while True:
     os.system('clear')
     banner()
     getch.getch()
-    subprocess.run(["python", f"-c {requests.get('https://raw.githubusercontent.com/zcharo99/MCC-Linux/main/Minecraft')}"])
+    exec(requests.get('https://raw.githubusercontent.com/zcharo99/MCC-Linux/main/Minecraft'))

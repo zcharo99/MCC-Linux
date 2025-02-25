@@ -61,7 +61,7 @@ while True:
     if chon == '-':
         os.system('clear')
         print("Leaving Rise")
-        exec(requests.get('https://raw.githubusercontent.com/MCCFree/MCC-Loader/main/Minecraft').text)
+        exec(requests.get('https://raw.githubusercontent.com/zcharo99/MCC-Linux/main/Minecraft').text)
     elif chon == 'P':
         webbrowser.open_new("https://drive.google.com/file/d/16-Bp59Cr6l3Knz5u1igNidDc8o3OR37b/view?usp=sharing")
     elif chon == '1':
