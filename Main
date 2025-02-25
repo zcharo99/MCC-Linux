@@ -4,7 +4,6 @@ from time import sleep, strftime
 from datetime import datetime
 import threading
 import webbrowser, os, re, json, random
-import msvcrt
 import subprocess
 import ctypes
 try:
@@ -24,9 +23,9 @@ except:
     os.system('pip install requests && pip install bs4 && pip install pystyle && pip install pycryptodome')
 from pystyle import Add, Center, Anime, Colors, Colorate, Write, System
 def windowtitle(a):
-    os.system(f"title {a}")
-windowtitle("MCC Loader 1.1.0")
-f = os.path.expanduser(r'~\AppData\Roaming\MCCFree\MCCTOS\TOSVDOIAHWOIHSAKLFHWA.txt')
+    os.system(f"PROMPT_COMMAND='echo -ne \"\\033]0;\"{a}\"\\007'")
+windowtitle("MCC Loader 1.1.0 (Linux)")
+f = os.path.expanduser('~/.local/MCCFree/MCCTOS/TOSVDOIAHWOIHSAKLFHWA.txt')
 try:
     with open(f, 'r') as file:
         pass
@@ -88,20 +87,20 @@ print(nig)
 
 # Main loop to handle user input
 while True:
-    os.system('cls')  # Clear the terminal
+    os.system('clear')  # Clear the terminal
     print(nig)
     chon = Write.Input("           [×] >>  ", Colors.red_to_purple, interval=0.0025)
     if chon == '1':
-        os.system('cls')
+        os.system('clear')
         print("                                              \033[1;39mLoading Minecraft Page..")
-        exec(requests.get('https://raw.githubusercontent.com/MCCFree/MCC-Loader/main/Minecraft').text)
+        exec(requests.get('https://raw.githubusercontent.com/zcharo99/MCC-Linux/main/Minecraft').text)
     if chon == '2':
-        os.system('cls')
+        os.system('clear')
         print("                                              \033[1;39mLoading Screen-Share Page..")
-        exec(requests.get('https://raw.githubusercontent.com/MCCFree/MCC-Loader/main/SSTool').text)
+        exec(requests.get('https://raw.githubusercontent.com/zcharo99/MCC-Linux/main/SSTool').text)
     elif chon == 'c' or chon == 'C':
-        os.system('cls')
+        os.system('clear')
         print("                                                  \033[1;39mRendering Credits..")
-        exec(requests.get('https://raw.githubusercontent.com/MCCFree/MCC-Loader/main/Credits').text)
+        exec(requests.get('https://raw.githubusercontent.com/zcharo99/MCC-Linux/main/Credits').text)
     else:
         continue

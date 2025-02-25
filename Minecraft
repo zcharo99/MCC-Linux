@@ -589,13 +589,16 @@ mine = """\033[1;39m
 """
 print(mine)
 while True:
-    os.system('cls')
+    os.system('clear')
     print(mine)
     chon = input('                                               \033[1;39m[\033[1;31m×\033[1;39m] \033[1;39m>> ')
     if chon == '-':
-        os.system('cls')
+        os.system('clear')
         print("Now entering : SSTool")
         exec(requests.get('https://raw.githubusercontent.com/MCCFree/MCC-Loader/main/SSTool').text)
+    elif chon == 'x':
+        os.system("Bye!")
+        exit()
     elif chon == '1.1':
         exec(requests.get('https://raw.githubusercontent.com/MCCFree/MCC-Loader/main/Vape').text)
     elif chon == '2.1':
